@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <base href="/">
+    <title>测试</title>
     <meta charset="UTF-8">
-    <title>testy</title>
-    <link href="./style/style.css" rel="stylesheet"></head>
-</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <script>
+        var rp = "http://static.front.dongao.com/";
+        var rv = "v1.46";
+    </script>
+    <link href="./test/index.css" rel="stylesheet" type="text/css">
+    <link href="./test/common.css" rel="stylesheet" type="text/css">
+    <link href="./test/default.css" rel="stylesheet" type="text/css">
+    <link href="./test/img_tc.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./test/jquery.min.js"></script>
+    <script type="text/javascript" src="./test/sea.js"></script>
+    <script type="text/javascript">
+        document.domain = 'dongao.com';
+        var rp = 'http://static.front.dongao.com/';
+        var rv = 'v1.46';
+        var initType = 'three';
+        //设置预览属性,前台观看，非预览
+        var isPreview = true;
+        var useStaticFlag = '1';
+    </script>
 <body>
-test
-<div class="img"></div>
+<select name="first" id="first" style="width: 200px;font-size:12px">
+
+</select>
+<select name="second" id="second" style="width: 200px;font-size:12px">
+
+</select>
+<button id="load">加载</button>
+<input id="requestURL" name="requestURL" type="hidden" value="17154">
+<div>
+    <div class="warp warp-thr">
+        <div class="main clearfix">
+            <div class="B_fixed B_fixed_three">
+                <div id="box" style="width: auto; position: static;">
+                    <div id="container">
+                        <div id="video">
+                            <div id="videoContainer" class="videoContainer" style="width: 455px; height: 280px;">
+                                <object name="DongAoPlayer" align="left" width="100%" height="100%" id="DongAoPlayer"
+                                        type="application/x-shockwave-flash" data="./test/ReconstructPlayer.swf"
+                                        style="visibility: visible;">
+                                    <param name="play" value="true">
+                                    <param name="loop" value="true">
+                                    <param name="menu" value="true">
+                                    <param name="salign" value="">
+                                    <param name="quality" value="high">
+                                    <param name="scale" value="showall">
+                                    <param name="bgcolor" value="#fff">
+                                    <param name="devicefont" value="false">
+                                    <param name="allowfullscreen" value="true">
+                                    <param name="allowscriptaccess" value="always">
+                                    <param name="allowFullScreenInteractive" value="true">
+                                    <param name="wmode" value="transparent">
+                                    <param name="flashvars"
+                                           value="awardCount=1&userID=2011045860000049&postURL=http://lq.dongao.com/api/retrainAward.html">
+                                </object>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    seajs.use('./test/listen');
+</script>
 </body>
 </html>
