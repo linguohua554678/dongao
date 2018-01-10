@@ -56,7 +56,7 @@ define(function(require, exports, module) {
         });*/
     };
     function init(){
-       var  initType = "big";
+       var  initType = "three";
         //请求服务获取播放参数
         listenView.init({
             pageType:initType,
