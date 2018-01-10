@@ -19,7 +19,25 @@ define(function(require, exports, module) {
     var tool = require('./tool');
     video = require('./video.js');
     function bindFirst(){
-        $.getJSON('http://esp-resource-service.beta.101.com/v1.0/groupkey', function (json) {
+        $.ajax({
+            url:"http://esp-resource-service.beta.101.com/v1.0/groupkey",
+            headers: {
+                Accept: "*/*",
+                "X-Requested-With":"ShockwaveFlash/28.0.0.137",
+                Host:"esp-resource-service.beta.101.com"
+            },
+            type: "get",
+            success: function (data) {
+                var lst = eval(json);
+                $("#first").html("");
+                for (i = 0; i < lst.length; i++) {
+                    var tname = lst[i].name;
+                    var tid = lst[i].id;
+                    $("#first").append("<option value='" + tid + "'>" + tname + "</option>");
+                }
+            }
+        });
+       /* $.getJSON('http://esp-resource-service.beta.101.com/v1.0/groupkey', function (json) {
             var lst = eval(json);
             $("#first").html("");
             for (i = 0; i < lst.length; i++) {
@@ -27,7 +45,7 @@ define(function(require, exports, module) {
                 var tid = lst[i].id;
                 $("#first").append("<option value='" + tid + "'>" + tname + "</option>");
             }
-        });
+        });*/
     };
     function bindSecond(id){
         $.getJSON('http://esp-resource-service.beta.101.com/v1.0/groupitem?id='+id, function (json) {
