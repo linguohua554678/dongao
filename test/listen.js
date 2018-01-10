@@ -19,7 +19,7 @@ define(function(require, exports, module) {
     var tool = require('./tool');
     video = require('./video.js');
     function bindFirst(){
-        $.getJSON('http://esp-resource-service.beta.101.com/v1.0/groupkey', function (json) {
+        $.getJSON('https://esp-resource-service.beta.101.com/v1.0/groupkey', function (json) {
             var lst = eval(json);
             $("#first").html("");
             for (i = 0; i < lst.length; i++) {
@@ -30,7 +30,7 @@ define(function(require, exports, module) {
         });
     };
     function bindSecond(id){
-        $.getJSON('http://esp-resource-service.beta.101.com/v1.0/groupitem?id='+id, function (json) {
+        $.getJSON('https://esp-resource-service.beta.101.com/v1.0/groupitem?id='+id, function (json) {
             var lst = eval(json);
             $("#second").html("");
             for (i = 0; i < lst.length; i++) {
@@ -45,7 +45,7 @@ define(function(require, exports, module) {
         //请求服务获取播放参数
         listenView.init({
             pageType:initType,
-            url:"http://esp-resource-service.beta.101.com/v1.0/lecture_content?id="+$("#requestURL").val(),
+            url:"https://esp-resource-service.beta.101.com/v1.0/lecture_content?id="+$("#requestURL").val(),
             flash:'DongAoPlayer'
         });
     }
