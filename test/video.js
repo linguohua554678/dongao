@@ -6,7 +6,7 @@
  * @version            1.0
  */
 define(function (require, exports, module) {
-    url = "./test/ReconstructPlayer.swf";
+    url = "./video/test/ReconstructPlayer.swf";
     var video = {
         init: function (obj) {
             $.extend(this.conf, obj);
