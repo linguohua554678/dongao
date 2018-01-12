@@ -9,6 +9,7 @@ define(function (require, exports, module) {
     url = "./video/test/ReconstructPlayer.swf";
     var video = {
         init: function (obj) {
+            alert("cccc");
             $.extend(this.conf, obj);
             $('#videoContainer').html($('<div>', {
                 id: obj.flash,
