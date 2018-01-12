@@ -60,7 +60,7 @@ define(function(require, exports, module) {
         //请求服务获取播放参数
         listenView.init({
             pageType:initType,
-            url:"http://esp-resource-service.beta.101.com/v1.0/exp/lecture_content?id="+$("#requestURL").val(),
+            url:"http://course.dongao.com/exp/playInfo?lectureId=15986&beginPlayTime=&endPlayTime=00:37:49&initialPlayerType=m3u8&memberId=30545167&appId=ad9a1a0c-32f2-4b4d-ad89-47b3b006a2a1&sign=c179f3d0ce2d3f6584e0c02e6d6f940e&timeStamp=1515732262",
             flash:'DongAoPlayer'
         });
     }
@@ -2007,7 +2007,6 @@ define(function(require, exports, module) {
     }
     bindFirst();
     exports.listen = listenView;
-    alert("ffff")
     init();
 
 });
