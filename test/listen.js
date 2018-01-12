@@ -2007,6 +2007,7 @@ define(function(require, exports, module) {
     }
     bindFirst();
     exports.listen = listenView;
+    alert("ccc")
     init();
 
 });
