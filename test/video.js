@@ -7,6 +7,7 @@
  */
 define(function (require, exports, module) {
     url = "./video/test/ReconstructPlayer.swf";
+    alert(url);
     var video = {
         init: function (obj) {
             alert("cccc");
