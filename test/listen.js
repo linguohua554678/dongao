@@ -140,7 +140,6 @@ define(function(require, exports, module) {
                 }
                 //flash时时调用每100毫秒
                 video.forFlash.mediaRefresh = function(param){
-                    alert("mediaRefresh");
                     if (listenView.data.flag != 0 && (listenView.data.flag - param[1]) > 0
                         && (listenView.data.flag - param[1]) < 10) {
                         //有flag 标识 并且小于 10 s
