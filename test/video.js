@@ -39,7 +39,6 @@ var video = {
         var attributes = {};
         attributes.name = obj.flash;
         attributes.align = "left";
-        $('#hello').flash({src:this.conf.url,width:550,height:400});
         swfobject.embedSWF(url, obj.flash, "100%", "100%", "9.0.0", rp + rv + "/static/course/js/expressInstall.swf", flashvars, params, attributes, function (obje) {
             if (obje.success) {
                 _this.conf.flash = obje.ref;
