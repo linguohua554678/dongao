@@ -215,11 +215,10 @@ var video = {
         }
     }
 };
-/*
- * 初始化flash调用函数
- */
-window.funcForFlash_Reconstruct = function () {
-    alert("funcForFlash_Reconstruct");
+
+function funcForFlash_Reconstruct(){
+    alert("funcForFlash_Reconstruct")
+    alert(arguments.length)
     if (arguments.length > 0) {
         var param = arguments;
         if (video.forFlash[param[0]]) {
@@ -230,4 +229,4 @@ window.funcForFlash_Reconstruct = function () {
     } else {
         console.log('arguments is null!');
     }
-};
+}
