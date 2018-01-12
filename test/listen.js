@@ -127,6 +127,7 @@ define(function(require, exports, module) {
             },
             //初始化播放器
             initPlay:function(){
+                alert("initPlay")
                 //初始化
                 video.init({
                     url:listenView.conf.url,
