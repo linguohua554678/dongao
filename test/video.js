@@ -10,6 +10,7 @@ url = "./video/test/ReconstructPlayer.swf";
 var video = {
     init: function (obj) {
         $.extend(this.conf, obj);
+
         $('#videoContainer').html($('<div>', {
             id: obj.flash,
             'class': 'fla-no',
@@ -216,17 +217,4 @@ var video = {
     }
 };
 
-function funcForFlash_Reconstruct(){
-    alert("funcForFlash_Reconstruct")
-    alert(arguments.length)
-    if (arguments.length > 0) {
-        var param = arguments;
-        if (video.forFlash[param[0]]) {
-            return video.forFlash[param[0]](param);
-        } else {
-            console.log(param[0] + ' is not a function!');
-        }
-    } else {
-        console.log('arguments is null!');
-    }
-}
+
