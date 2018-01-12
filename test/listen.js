@@ -94,7 +94,6 @@ define(function(require, exports, module) {
                 listenView.conf.flash = param.flash;
                 listenView.conf.url = param.url;
                 listenView.data.curWindow = param.pageType;
-                alert(param.url)
                 this.onFun();
                 //提问，设置回答发邮件通知
                 $('.email_icon').on('click',function(){
@@ -166,7 +165,6 @@ define(function(require, exports, module) {
                 }
                 //flash初始化完毕
                 video.forFlash.playerIsReady = function(param){
-                    alert("playerIsReady")
                     if(listenView.conf.screen.videoType === video.menu.bigVideo){
                         //显示播放列表
                         $('#video_list').show();
