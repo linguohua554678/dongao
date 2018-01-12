@@ -9,7 +9,6 @@ url = "./video/test/ReconstructPlayer.swf";
 
 var video = {
     init: function (obj) {
-        alert("ccccxxx");
         $.extend(this.conf, obj);
         $('#videoContainer').html($('<div>', {
             id: obj.flash,
@@ -85,7 +84,6 @@ var video = {
      * 播放视频
      */
     playVideo: function () {
-        alert("playVideo");
         //判断当前视频为播放完毕的�? 不进行播�?
         if (this.getVideoStatus() === video.menu.playComplete) {
             return false;
@@ -96,7 +94,6 @@ var video = {
      * 暂停视频
      */
     pauseVideo: function () {
-        alert("pauseVideo");
         //判断当前视频为播放完毕的�? 不进行暂�?
         if (this.getVideoStatus() === video.menu.playComplete) {
             return false;
@@ -107,7 +104,6 @@ var video = {
      * 暂停或播放视�?
      */
     togglePlay: function () {
-        alert("togglePlay");
         var status = this.getVideoStatus();
         if (status === this.conf.menu.play) {
             this.pauseVideo();
@@ -119,7 +115,6 @@ var video = {
      * 停止视频
      */
     stopVideo: function () {
-        alert("stopVideo");
         this.conf.flash.stopVideo();
     },
     /*
@@ -138,21 +133,18 @@ var video = {
      * 返回当前视频播放的时间点，以秒为单位
      */
     getCurrentVideoTime: function () {
-        alert("getCurrentVideoTime");
         return this.conf.flash.getCurrentVideoTime();
     },
     /*
      * 返回当前视频的总时�?
      */
     getCurrentVideoTotalTime: function () {
-        alert("getCurrentVideoTotalTime");
         return this.conf.flash.getCurrentVideoTotalTime();
     },
     /*
      * 返回视频当前的播放状�?
      */
     getVideoStatus: function () {
-        alert("getVideoStatus");
         return this.conf.flash.getVideoStatus();
     },
     /*
@@ -165,14 +157,12 @@ var video = {
      * 设置视频的有效时�?
      */
     setValidPlayTime: function (time) {
-        alert("time");
         this.conf.flash.setValidPlayTime(time);
     },
     /*
      * 设置falsh宽高
      */
     setVideoSize: function (width, height) {
-        alert("setVideoSize");
         this.conf.flash.setVideoSize(width, height);
     },
     /*
@@ -181,7 +171,6 @@ var video = {
     forFlash: {
         //flash初始化完�?
         playerIsReady: function () {
-            alert("playerIsReady");
         },
         /*
          * 视频播放时调用，间隔100毫秒调用一�?
@@ -223,7 +212,6 @@ var video = {
          * 知识点实际时�?
          */
         setRealTime: function (param) {
-            alert("setRealTime");
         }
     }
 };

@@ -80,7 +80,6 @@ var listenView = {
             $('.email_icon').on('click',function(){
                 $(this).toggleClass('email_icon_act')
             });
-            alert("init")
             $.each(this.inits,function(i,n){
                 n();
             });
@@ -154,7 +153,6 @@ var listenView = {
                 //初始化视频大小类型
                 video.changeVideoType(listenView.conf.screen.videoType);
             }
-
         }
     },
     //页面处理事件工具类
