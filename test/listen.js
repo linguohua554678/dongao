@@ -99,6 +99,7 @@ define(function(require, exports, module) {
                 $('.email_icon').on('click',function(){
                     $(this).toggleClass('email_icon_act')
                 });
+                alert("init")
                 $.each(this.inits,function(i,n){
                     n();
                 });
@@ -127,7 +128,6 @@ define(function(require, exports, module) {
             },
             //初始化播放器
             initPlay:function(){
-                alert("initPlay")
                 //初始化
                 video.init({
                     url:listenView.conf.url,
