@@ -39,7 +39,9 @@ define(function (require, exports, module) {
             var attributes = {};
             attributes.name = obj.flash;
             attributes.align = "left";
+            alert("   alert(obje.success);");
             swfobject.embedSWF(url, obj.flash, "100%", "100%", "9.0.0", rp + rv + "/static/course/js/expressInstall.swf", flashvars, params, attributes, function (obje) {
+                alert(obje.success);
                 if (obje.success) {
                     _this.conf.flash = obje.ref;
                 }
