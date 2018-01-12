@@ -57,6 +57,7 @@ define(function(require, exports, module) {
     };
     function init(){
        var  initType = "three";
+        alert($("#requestURL").val());
         //请求服务获取播放参数
         listenView.init({
             pageType:initType,
@@ -89,7 +90,9 @@ define(function(require, exports, module) {
         },
         //初始化方法
         init:function(param){
+            alert(param.pageType);
             if(param && param.pageType && param.flash && param.url){
+                alert("init");
                 listenView.conf.initPageType = param.pageType;
                 listenView.conf.flash = param.flash;
                 listenView.conf.url = param.url;
