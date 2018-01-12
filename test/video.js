@@ -10,7 +10,7 @@ define(function (require, exports, module) {
     alert(url);
     var video = {
         init: function (obj) {
-            alert("cccc");
+            alert("ccccxxx");
             $.extend(this.conf, obj);
             $('#videoContainer').html($('<div>', {
                 id: obj.flash,
