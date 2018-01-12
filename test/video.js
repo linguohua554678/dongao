@@ -6,7 +6,6 @@
  * @version            1.0
  */
 define(function (require, exports, module) {
-    alert("cc111c");
     url = "./video/test/ReconstructPlayer.swf";
     var video = {
         init: function (obj) {
@@ -18,7 +17,6 @@ define(function (require, exports, module) {
                     '<a target="_blank" href="http://www.adobe.com/go/getflashplayer"><img src="' + rp + rv + '/static/course/img/flash.png" alt="Get Adobe Flash player">',
                     '</a><p>建议您升级Flash插件</p></div>'].join("")
             }));
-            alert("ccc");
             var _this = this;
             var flashvars = {};
             flashvars.awardCount = "1";
