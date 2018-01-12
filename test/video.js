@@ -10,7 +10,6 @@ url = "./video/test/ReconstructPlayer.swf";
 var video = {
     init: function (obj) {
         $.extend(this.conf, obj);
-
         $('#videoContainer').html($('<div>', {
             id: obj.flash,
             'class': 'fla-no',
