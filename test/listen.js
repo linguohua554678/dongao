@@ -41,7 +41,7 @@ function init(){
     //请求服务获取播放参数
     listenView.init({
         pageType:initType,
-        url:"http://esp-resource-service.beta.101.com/v1.0/exp/lecture_content?id="+$("#requestURL").val(),
+        url:"https://esp-resource-service.beta.101.com/v1.0/exp/lecture_content?id="+$("#requestURL").val(),
         flash:'DongAoPlayer'
     });
 }
