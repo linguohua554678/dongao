@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="video" id="HLSPlayer">
+    <SCRIPT LANGUAGE=JavaScript>
+        function GetQueryString(name)
+        {
+            try {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null)return unescape(r[2]);
+                return null;
+            }catch (e){
+                return null
+            }
+        }
+        var vID = "";
+        var vWidth = "100%";                //播放器宽度设置
+        var vHeight = 400;                   //播放器宽度设置
+        var vPlayer = "./source/HLSPlayer.swf?v=1.5"; //播放器文件
+        var vHLSset = "./source/HLS.swf";             //HLS配置
+        var vPic = "./source/images/start.jpg";    //视频缩略图
+        var vCssurl = "./source/source/images/mini.css";     //移动端CSS应用文件
+        var vHLSurl =GetQueryString("url")?GetQueryString("url"):"./source/location/1516354772069/12411/video.m3u8";
+        //-->
+    </SCRIPT>
+    <script type="text/javascript" src="./source/hls.min.js?rand=3396fsa778"></script>
+</div>
+</body>
+</html>
