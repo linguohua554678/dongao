@@ -1,0 +1,16 @@
+#EXTM3U
+#EXT-X-ALLOW-CACHE:YES
+#EXT-X-VERSION:3
+#EXT-X-KEY:METHOD=AES-128,URI="https://linguohua420604.github.io/site/source/location/2b50_2b55/15316/14920/keyText.txt",IV=0x06e77556935e243e0962239e6955590d
+#EXT-X-TARGETDURATION:11
+#EXTINF:9.92,"831336"
+http://v.dongaocloud.com/2b50/2b55/7e0/432/fb7883daf8406bcea9f4483c2ccf3cd7/fb7883daf8406bcea9f4483c2ccf3cd7-000.ts
+#EXTINF:10,"587876"
+http://v.dongaocloud.com/2b50/2b55/7e0/432/fb7883daf8406bcea9f4483c2ccf3cd7/fb7883daf8406bcea9f4483c2ccf3cd7-001.ts
+#EXTINF:10,"585244"
+http://v.dongaocloud.com/2b50/2b55/7e0/432/fb7883daf8406bcea9f4483c2ccf3cd7/fb7883daf8406bcea9f4483c2ccf3cd7-002.ts
+#EXTINF:10.04,"604232"
+http://v.dongaocloud.com/2b50/2b55/7e0/432/fb7883daf8406bcea9f4483c2ccf3cd7/fb7883daf8406bcea9f4483c2ccf3cd7-003.ts
+#EXTINF:3.69,"260568"
+http://v.dongaocloud.com/2b50/2b55/7e0/432/fb7883daf8406bcea9f4483c2ccf3cd7/fb7883daf8406bcea9f4483c2ccf3cd7-004.ts
+#EXT-X-ENDLIST
