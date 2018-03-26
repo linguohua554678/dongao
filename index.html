@@ -1,0 +1,400 @@
+<html>
+<head>
+    <script type="text/javascript" src="./source/jquery.min.js"></script>
+</head>
+<body>
+<select name="first" id="first" style="width: 200px;font-size:12px">
+
+</select>
+<select name="second" id="second" style="width: 200px;font-size:12px">
+
+</select>
+
+<select name="three" id="three" style="width: 200px;font-size:12px">
+
+</select>
+<button id="load">加载</button>
+<iframe id="url" src="" height="100%" width="100%">
+
+</iframe>
+<script>
+    function bindFirst() {
+        var tmp = [
+            {
+                "id": "2b4f_2ba9",
+                "name": "初级会计实务"
+            },
+            {
+                "id": "2b4f_2ba8",
+                "name": "经济法基础"
+            },
+           {
+            "id": "2b4f_2b4f",
+            "name": "第1讲_第三章_第三章小结.pdf"
+            },
+            {
+                "id": "2b4f_2b51",
+                "name": "第1讲_第二章_第一单元考情分析.pdf"
+            },
+            {
+                "id": "2b4f_2b8e",
+                "name": "第1讲_考前20天冲刺秘籍.pdf"
+            },
+            {
+                "id": "2b4f_2baa",
+                "name": "01_第1讲.pdf"
+            },
+            {
+                "id": "2b50_2b53",
+                "name": "第1讲_冲刺串讲班（1）.pdf"
+            },
+            {
+                "id": "2b50_2b55",
+                "name": "第1讲_无权代理VS表见代理VS滥用代理VS无权处分.pdf"
+            },
+            {
+                "id": "2b50_2b57",
+                "name": "第1讲_中级财务管理提分技巧班.pdf"
+            },
+            {
+                "id": "2b50_2b91",
+                "name": "第1讲_学霸分享班（1）.pdf"
+            },
+            {
+                "id": "2b50_2bb8",
+                "name": "第1讲_存货.pdf"
+            },
+            {
+                "id": "2b50_2bb9",
+                "name": "第1讲_中级经济法讲什么内容？.pdf"
+            },
+            {
+                "id": "2b50_2bba",
+                "name": "第1讲_前言.pdf"
+            },
+            {
+                "id": "2b50_2bbb",
+                "name": "第1讲_前言、总论.pdf"
+            },
+            {
+                "id": "2b51_2b5b",
+                "name": "第1讲_企业战略与财务战略（1）.pdf"
+            },
+            {
+                "id": "2b51_2b86",
+                "name": "第1讲_高级会计师评审（1）.pdf"
+            },
+            {
+                "id": "2b51_2bb4",
+                "name": "第1讲_有线接入.pdf"
+            },
+            {
+                "id": "2b51_2bb5",
+                "name": "第1讲_2015年B级试题第1部分：词汇选项.pdf"
+            },
+            {
+                "id": "2b51_2bb6",
+                "name": "第1讲_框架结构、题型及分值.pdf"
+            },
+            {
+                "id": "2b52_2b5e",
+                "name": "第1讲_认定辨析1.pdf"
+            },
+            {
+                "id": "2b52_2b60",
+                "name": "第1讲_前言、税法总论.pdf"
+            },
+            {
+                "id": "2b52_2b62",
+                "name": "第1讲_法律基本原理、基本民事法律制度（1）.pdf"
+            },
+            {
+                "id": "2b52_2b64",
+                "name": "第1讲_财务成本管理提分技巧.pdf"
+            },
+            {
+                "id": "2b52_2b66",
+                "name": "第1讲_错题消灭班（1）.pdf"
+            },
+            {
+                "id": "2b52_2b68",
+                "name": "第1讲_主观题（1）.pdf"
+            },
+            {
+                "id": "2b52_2b6a",
+                "name": "第1讲_上市公司的组织机构.pdf"
+            },
+            {
+                "id": "2b52_2b8d",
+                "name": "第1讲_学霸分享班.pdf"
+            },
+            {
+                "id": "2b52_2bb2",
+                "name": "第1讲_试卷二•《考点精讲班-前言》.pdf"
+            },
+            {
+                "id": "2b52_2bc2",
+                "name": "第1讲_《会计》学习方法指导.pdf"
+            },
+            {
+                "id": "2b52_2bc3",
+                "name": "第1讲_《审计》学习方法指导.pdf"
+            },
+            {
+                "id": "2b52_2bc4",
+                "name": "第1讲_第一讲.pdf"
+            },
+            {
+                "id": "2b52_2bc5",
+                "name": "第1讲_前言.pdf"
+            },
+            {
+                "id": "2b52_2bc6",
+                "name": "第1讲_引言：注会财管的学习和预科班的讲授（1）.pdf"
+            },
+            {
+                "id": "2b52_2bc7",
+                "name": "第1讲_学习方法指导.pdf"
+            },
+            {
+                "id": "2b52_2bc8",
+                "name": "第1讲_注会职业规划（1）.pdf"
+            },
+            {
+                "id": "2b53_2b7e",
+                "name": "第1讲_前言.pdf"
+            },
+            {
+                "id": "2b53_2b7f",
+                "name": "第1讲_第一次督导测试（1）.pdf"
+            },
+            {
+                "id": "2b53_2b80",
+                "name": "第1讲_强化提升指导.pdf"
+            },
+            {
+                "id": "2b53_2b81",
+                "name": "第1讲_财务与会计月度集训班（1）.pdf"
+            },
+            {
+                "id": "2b53_2b82",
+                "name": "第1讲_前言、第一章.pdf"
+            },
+            {
+                "id": "2b53_2b96",
+                "name": "第1讲_机考操作攻略.pdf"
+            },
+            {
+                "id": "2b53_2bd3",
+                "name": "第1讲_2018年税务师《财务与会计》学习方法指导.pdf"
+            },
+            {
+                "id": "2b53_2bd4",
+                "name": "第1讲_前言.pdf"
+            },
+            {
+                "id": "2b53_2bd5",
+                "name": "第1讲_学习方法指导.pdf"
+            },
+            {
+                "id": "2b53_2bd6",
+                "name": "第1讲_2018年税务师税法（II）学习方法指导.pdf"
+            },
+            {
+                "id": "2b53_2bd7",
+                "name": "第1讲_前言、税法基本原理.pdf"
+            },
+            {
+                "id": "2b53_2bd8",
+                "name": "第1讲_税法及原则.pdf"
+            },
+            {
+                "id": "2b54_2b92",
+                "name": "第1讲_2017年基金从业资格《基金法律法规》模考点题班（1）.pdf"
+            },
+            {
+                "id": "2b54_2b93",
+                "name": "第1讲_财务报表.pdf"
+            },
+            {
+                "id": "2b54_2b94",
+                "name": "第1讲_股权投资基金概述.pdf"
+            },
+            {
+                "id": "2b54_2bc9",
+                "name": "第1讲_金融市场、资产管理与投资基金.pdf"
+            },
+            {
+                "id": "2b54_2bca",
+                "name": "第1讲_备考指南班.pdf"
+            },
+            {
+                "id": "2b54_2bcb",
+                "name": "第1讲_备考指南班.pdf"
+            },
+            {
+                "id": "2b56_2b90",
+                "name": "第1讲_保险理财两不误（1）.pdf"
+            },
+            {
+                "id": "2b56_2b9c",
+                "name": "第1讲_财务软件速成班——金蝶.pdf"
+            },
+            {
+                "id": "2b56_2b9d",
+                "name": "第1讲_利息支出财税全攻略（1）.pdf"
+            },
+            {
+                "id": "2b56_2b9e",
+                "name": "第1讲_用对用好定金、订金和押金.pdf"
+            },
+            {
+                "id": "2b56_2b9f",
+                "name": "第1讲_增值税税率改革.pdf"
+            },
+            {
+                "id": "2b56_2ba5",
+                "name": "第1讲_职场礼仪及沟通技巧（1）.pdf"
+            },
+            {
+                "id": "2b56_2be3",
+                "name": "第1讲_农产品核定扣除（三）账务处理与申报填列.pdf"
+            },
+            {
+                "id": "2b56_2be6",
+                "name": "第1讲_高品质询证函的全程管理 （1）.pdf"
+            },
+            {
+                "id": "2b56_2be7",
+                "name": "第1讲_股权激励之行权条款设定（1）.pdf"
+            },
+            {
+                "id": "2b58_2b99",
+                "name": "第1讲_前言.pdf"
+            },
+            {
+                "id": "2b58_2b9a",
+                "name": "第1讲_财务报表分析（1）.pdf"
+            },
+            {
+                "id": "2b5b_2bab",
+                "name": "第1讲_账套管理、期初建账和总账业务处理与操作.pdf"
+            },
+            {
+                "id": "2b5c_2bac",
+                "name": "第1讲_第一部分 经济学基础（1）.pdf"
+            },
+            {
+                "id": "2b5c_2bad",
+                "name": "第1讲_第一部分 组织行为学（1）.pdf"
+            },
+            {
+                "id": "2b5c_2bae",
+                "name": "第1讲_企业战略与经营决策（1）.pdf"
+            },
+            {
+                "id": "2b5c_2baf",
+                "name": "第1讲_金融市场与金融工具（1）.pdf"
+            },
+            {
+                "id": "2b5c_2bb0",
+                "name": "第1讲_第一章 公共财政与财政职能.pdf"
+            },
+            {
+                "id": "2b5c_2bb1",
+                "name": "第1讲_中级经济师公共课.pdf"
+            },
+            {
+                "id": "2b5c_2bcd",
+                "name": "第1讲_市场供给.pdf"
+            },
+            {
+                "id": "2b5c_2bce",
+                "name": "第1讲_行政层级式职能式矩阵式组织形式.pdf"
+            },
+            {
+                "id": "2b5c_2bcf",
+                "name": "第1讲_行业生命周期分析.pdf"
+            },
+            {
+                "id": "2b5c_2bd0",
+                "name": "第1讲_金融市场的类型.pdf"
+            },
+            {
+                "id": "2b5c_2bd1",
+                "name": "第1讲_公共物品的概念及其特征.pdf"
+            },
+            {
+                "id": "2b5c_2bd2",
+                "name": "第1讲_中级经济师公共课.pdf"
+            },
+            {
+                "id": "2b5e_2bbf",
+                "name": "第1讲_2017年证券从业考试《证券市场基本法律法规》模拟试题一（1）.pdf"
+            },
+            {
+                "id": "2b5e_2bc0",
+                "name": "第1讲_2017年证券从业考试《金融市场基础知识》模拟试题一（1）.pdf"
+            },
+            {
+                "id": "2b5e_2bc1",
+                "name": "第1讲_会计基础一点通（1）.pdf"
+            },
+            {
+                "id": "2b5e_2bdd",
+                "name": "第1讲_证券市场基本法律法规概述（1）.pdf"
+            },
+            {
+                "id": "2b5e_2bde",
+                "name": "第1讲_备考指南班.pdf"
+            },
+            {
+                "id": "2b5e_2bdf",
+                "name": "第1讲_前言、总论.pdf"
+            }
+        ];
+        $("#first").html("");
+        for (var i = 0; i < tmp.length; i++) {
+            $("#first").append("<option value='" + tmp[i].id + "'>" + tmp[i].name + "</option>");
+        }
+        bindSecond("2b4f_2ba9");
+    };
+    function bindSecond(id) {
+        $("#second").html("");
+        $.getJSON("https://linguohua420604.github.io/site/source/location/" + id + "_data.json", function (result) {
+            $.each(result, function (i, field) {
+                $("#second").append("<option value='" + field["id"] + "'>" + field["name"] + "</option>");
+            });
+            bindThree(id, result[0]["id"])
+        });
+    }
+    ;
+    function bindThree(first, id) {
+        $("#three").html("");
+        var url = "https://linguohua420604.github.io/site/source/location/" + first + "/" + id + "_data.json";
+        $.getJSON(url, function (result) {
+            $.each(result, function (i, field) {
+                $("#three").append("<option value='" + field["url"] + "'>" + field["name"] + "</option>");
+            });
+        });
+    }
+    ;
+    $("#first").change(function () {
+        var val = $(this).children('option:selected').val();
+        if (val) {
+            bindSecond(val);
+        }
+    });
+    $("#second").change(function () {
+        var val = $(this).children('option:selected').val();
+        if (val) {
+            bindThree($('#first option:selected').val(), val);
+        }
+    });
+    $("#load").on('click', function () {
+        var url = "https://linguohua420604.github.io/site/player.html?url=" + $('#three option:selected').val();
+        document.getElementById("url").src = url;
+    });
+    bindFirst();
+</script>
+</body>
