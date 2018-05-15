@@ -21,40 +21,22 @@
 
 
     function bindFirst() {
-        var tmp = [
-           {
-                "id": "2b4f_2ba9",
-                "name": "初级会计实务"
-            },
+	 var tmp = [
             {
-                "id": "2b4f_2ba8",
-                "name": "经济法基础"
-            },
-	   
-		{
-                "id": "2b5c_2bac",
-                "name": "《基础》考前5天提示班"
-            },{
-                "id": "2b53_2b81",
-                "name": "第1讲_考前五天提示班（1"
+                "id": "2b50_2bb9",
+                "name": "经济法"
             },
 		{
-                "id": "2b52_2b66",
-                "name": "《财务与会计》考前五天提示班."
-            },
-		{
-                "id": "2b52_2b68",
-                "name": "考前五天提示班"
-            },{
-                "id": "2b52_2b66",
-                "name": "《会计》考前5天提示班"
-            },
+		"id": "2b50_2b53",
+                "name": "实务"
+            }
+          
         ];
         $("#first").html("");
         for (var i = 0; i < tmp.length; i++) {
             $("#first").append("<option value='" + tmp[i].id + "'>" + tmp[i].name + "</option>");
         }
-        bindSecond("2b4f_2ba9");
+        bindSecond("2b50_2bb9");
     };
     function bindSecond(id) {
         $("#second").html("");
