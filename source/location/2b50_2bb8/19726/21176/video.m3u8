@@ -1,7 +1,7 @@
 #EXTM3U
 #EXT-X-ALLOW-CACHE:YES
 #EXT-X-VERSION:3
-#EXT-X-KEY:METHOD=AES-128,URI="https://linguohua420604.github.io/site/source/location/2b50_2bb8/19726/21176/keyText.txt",IV=0x79409f2d7d637d316ff969955570e495
+#EXT-X-KEY:METHOD=AES-128,URI="https://linguohua420604.github.io/video/source/location/2b50_2bb8/19726/21176/keyText.txt",IV=0x79409f2d7d637d316ff969955570e495
 #EXT-X-TARGETDURATION:11
 #EXTINF:9.92,"727748"
 http://v.dongaocloud.com/2b50/2bb8/758/c01/da0f59dce6c57ed73b5b1ffa963a1065/da0f59dce6c57ed73b5b1ffa963a1065-000.ts?Speed=10&Schema=sd&VideoId=20136637
