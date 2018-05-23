@@ -40,7 +40,7 @@
     };
     function bindSecond(id) {
         $("#second").html("");
-        $.getJSON("https://linguohua420604.github.io/site/video/location/" + id + "_data.json", function (result) {
+        $.getJSON("https://linguohua420604.github.io/video/location/" + id + "_data.json", function (result) {
             $.each(result, function (i, field) {
                 $("#second").append("<option value='" + field["id"] + "'>" + field["name"] + "</option>");
             });
@@ -50,7 +50,7 @@
     ;
     function bindThree(first, id) {
         $("#three").html("");
-        var url = "https://linguohua420604.github.io/site/video/location/" + first + "/" + id + "_data.json";
+        var url = "https://linguohua420604.github.io/video/location/" + first + "/" + id + "_data.json";
         $.getJSON(url, function (result) {
             $.each(result, function (i, field) {
                 $("#three").append("<option value='" + field["url"] + "'>" + field["name"] + "</option>");
@@ -71,7 +71,7 @@
         }
     });
     $("#load").on('click', function () {
-        var url = "https://linguohua420604.github.io/site/player.html?url=" + $('#three option:selected').val();
+        var url = "https://linguohua420604.github.io/video/player.html?url=" + $('#three option:selected').val();
         document.getElementById("url").src = url;
     });
     bindFirst();
