@@ -34,6 +34,22 @@
     <button id="load1">加载</button>
 
 </div>
+	
+	<div>
+  1.5速度：
+    <select name="first2" id="first12" style="width: 200px;font-size:12px">
+
+    </select>
+    <select name="second2" id="second2" style="width: 200px;font-size:12px">
+
+    </select>
+
+    <select name="three2" id="three2" style="width: 200px;font-size:12px">
+
+    </select>
+    <button id="load2">加载</button>
+
+</div>
 <iframe id="url" src="" height="100%" width="100%">
 
 </iframe>
@@ -156,5 +172,64 @@
         document.getElementById("url").src = url;
     });
     bindFirst1();
+	
+	
+	  function bindFirst2() {
+        var tmp = [
+            {
+                "id": "2b50_2bb9",
+                "name": "中级经济法"
+            },
+            {
+                "id": "2b50_2bb8",
+                "name": "中级会计法"
+            },
+            {
+                "id": "2b50_2bba",
+                "name": "中级财务管理预科班"
+            }
+
+        ];
+        $("#first2").html("");
+        for (var i = 0; i < tmp.length; i++) {
+            $("#first2").append("<option value='" + tmp[i].id + "'>" + tmp[i].name + "</option>");
+        }
+        bindSecond2("2b50_2bb9");
+    };
+    function bindSecond2(id) {
+        $("#second2").html("");
+        $.getJSON("https://linguohua420604.github.io/video/source/location1_5/" + id + "_data.json", function (result) {
+            $.each(result, function (i, field) {
+                $("#second2").append("<option value='" + field["id"] + "'>" + field["name"] + "</option>");
+            });
+            bindThree1(id, result[0]["id"])
+        });
+    }
+    function bindThree2(first, id) {
+        $("#three2").html("");
+        var url = "https://linguohua420604.github.io/video/source/location1_5/" + first + "/" + id + "_data.json";
+        $.getJSON(url, function (result) {
+            $.each(result, function (i, field) {
+                $("#three2").append("<option value='" + field["url"] + "'>" + field["name"] + "</option>");
+            });
+        });
+    }
+    $("#first2").change(function () {
+        var val = $(this).children('option:selected').val();
+        if (val) {
+            bindSecond2(val);
+        }
+    });
+    $("#second2").change(function () {
+        var val = $(this).children('option:selected').val();
+        if (val) {
+            bindThree2($('#first2 option:selected').val(), val);
+        }
+    });
+    $("#load2").on('click', function () {
+        var url = "https://linguohua420604.github.io/video/player.html?url=" + $('#three2 option:selected').val();
+        document.getElementById("url").src = url;
+    });
+    bindFirst2();
 </script>
 </body>
