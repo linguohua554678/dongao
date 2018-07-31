@@ -4,23 +4,23 @@
 </head>
 <body>
 <div>
- 1速度：
-<select name="first" id="first" style="width: 200px;font-size:12px">
+    1速度：
+    <select name="first" id="first" style="width: 200px;font-size:12px">
 
-</select>
-<select name="second" id="second" style="width: 200px;font-size:12px">
+    </select>
+    <select name="second" id="second" style="width: 200px;font-size:12px">
 
-</select>
+    </select>
 
-<select name="three" id="three" style="width: 200px;font-size:12px">
+    <select name="three" id="three" style="width: 200px;font-size:12px">
 
-</select>
-<button id="load">加载</button>
+    </select>
+    <button id="load">加载</button>
 
 </div>
 
 <div>
-  1.2速度：
+    1.2速度：
     <select name="first1" id="first1" style="width: 200px;font-size:12px">
 
     </select>
@@ -34,9 +34,9 @@
     <button id="load1">加载</button>
 
 </div>
-	
-	<div>
-  1.5速度：
+
+<div>
+    1.5速度：
     <select name="first2" id="first12" style="width: 200px;font-size:12px">
 
     </select>
@@ -54,23 +54,21 @@
 
 </iframe>
 <script>
-
-
     function bindFirst() {
-       var tmp = [
+        var tmp = [
             {
                 "id": "2b50_2bb9",
                 "name": "中级经济法"
             },
-		{
-		"id": "2b50_2bb8",
+            {
+                "id": "2b50_2bb8",
                 "name": "中级会计法"
             },
-			{
-		"id": "2b50_2bba",
+            {
+                "id": "2b50_2bba",
                 "name": "中级财务管理预科班"
             }
-          
+
         ];
         $("#first").html("");
         for (var i = 0; i < tmp.length; i++) {
@@ -113,8 +111,6 @@
         document.getElementById("url").src = url;
     });
     bindFirst();
-
-
     function bindFirst1() {
         var tmp = [
             {
@@ -129,7 +125,6 @@
                 "id": "2b50_2bba",
                 "name": "中级财务管理预科班"
             }
-
         ];
         $("#first1").html("");
         for (var i = 0; i < tmp.length; i++) {
@@ -172,9 +167,9 @@
         document.getElementById("url").src = url;
     });
     bindFirst1();
-	
-	
-	  function bindFirst2() {
+
+
+    function bindFirst2() {
         var tmp = [
             {
                 "id": "2b50_2bb9",
@@ -188,7 +183,6 @@
                 "id": "2b50_2bba",
                 "name": "中级财务管理预科班"
             }
-
         ];
         $("#first2").html("");
         for (var i = 0; i < tmp.length; i++) {
@@ -202,7 +196,7 @@
             $.each(result, function (i, field) {
                 $("#second2").append("<option value='" + field["id"] + "'>" + field["name"] + "</option>");
             });
-            bindThree1(id, result[0]["id"])
+            bindThree2(id, result[0]["id"])
         });
     }
     function bindThree2(first, id) {
